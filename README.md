@@ -32,6 +32,20 @@ Added a preconfigured strucure for Mosquitto auth. Password static method. "Stat
 		chirpstack-network-server.toml
 
 
+* Password generation
+
+	To be able to generate secure password you need to go to the mosquitto docker container and execute inside the mosquitto password commands.
+
+	Enter to the container:
+	
+	    sudo docker exec -it <ID container> sh
+	Once inside the container generate your password
+
+	    mosquitto_passwd -c /mosquitto/passwd yourUSER
+User and password crypted generated will be stored in "passwd" file and synchronized with the volume before created. 
+
+	The users created in this step need to be included in the "acls" file
+	The password used in chirpstack configuration files ARE NOT the crypted password generated inside mosquitto, need to be the original password used 
 
 
 **Note:** Please use this `docker-compose.yml` file as a starting point for testing

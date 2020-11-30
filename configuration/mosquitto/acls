@@ -1,0 +1,6 @@
+user user1
+topic readwrite #
+user user2
+topic readwrite #
+user user3
+topic readwrite # 

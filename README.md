@@ -15,10 +15,12 @@ Added a preconfigured strucure for Mosquitto auth. Password static method. "Stat
             File passwd: user + password (you need to replace use&password) 
             File acls: acces control list by user (you need to replace users, and if you whant more restrictions, change it based in mosquitto acces rules)
             Folder config:
-               File mosquitto.conf
-                     "allow_anonymous false
+	    
+    File mosquitto.conf
+
+                     allow_anonymous false
                      password_file /mosquitto/passwd
-                     acl_file /mosquitto/acls"
+                     acl_file /mosquitto/acls
    Data destination
 
 -	This Is the volume folder where will be synchronised the config data. by default is mosquitto, and inside will be synchronized the folders and files from Data origen.

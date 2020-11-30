@@ -8,7 +8,7 @@ Added a preconfigured strucure for Mosquitto auth. Password static method. "Stat
 
    Add to the docker-compose.yml the volume structure for mosquitto " - ./configuration/mosquitto:/mosquitto "
 
-   Data Origen, the folder where you have the docker-compose.yml file --> Configuration folder, to match with the other conf files for Chirpstack
+   Data Origen, the folder where you have the docker-compose.yml file - Configuration folder, to match with the other conf files for Chirpstack
 
       - Configuration
          Inside you will see:

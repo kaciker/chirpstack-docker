@@ -44,8 +44,10 @@ Added a preconfigured strucure for Mosquitto auth. Password static method. "Stat
 	    mosquitto_passwd -c /mosquitto/passwd yourUSER
 User and password crypted generated will be stored in "passwd" file and synchronized with the volume before created. 
 
-	The users created in this step need to be included in the "acls" file
-	The password used in chirpstack configuration files ARE NOT the crypted password generated inside mosquitto, need to be the original password used 
+Note:
+- The users created in this step need to be included in the "acls" file.
+- The password used in chirpstack configuration files ARE NOT the crypted password generated inside mosquitto, need to be the original password used.
+
 
 
 **Note:** Please use this `docker-compose.yml` file as a starting point for testing
